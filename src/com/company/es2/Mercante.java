@@ -52,9 +52,18 @@ public class Mercante extends Lavoratore{
 
     public void vendiFragole(int fragole) {
         merciVendute += fragole;
+        numProdottiInVendita -= fragole;
     }
 
-    public void vendiAsparagi(int asparagi) {
-        merciVendute += asparagi;
+    public void vendiAsparagi(int asparagi) throws TroppiProdottiVendutiException {
+        if (asparagi <= numProdottiInVendita) {
+            merciVendute += asparagi;
+            numProdottiInVendita -= asparagi;
+        }
+        else {
+            throw new TroppiProdottiVendutiException ("Non hai abbastanza prodotti");
+        }
+
     }
 }
+

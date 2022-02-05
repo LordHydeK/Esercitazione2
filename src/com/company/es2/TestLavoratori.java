@@ -35,7 +35,6 @@ public class TestLavoratori {
         mercante2.vendiFragole(2);
         assert mercante2.merciVendute() == 14;
 
-
         try {
             mercante2.vendiAsparagi(5);
             assert false;
