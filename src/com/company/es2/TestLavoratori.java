@@ -38,7 +38,8 @@ public class TestLavoratori {
         try {
             mercante2.vendiAsparagi(5);
             assert false;
-        } catch(TroppiProdottiVendutiException e) {
+        }
+        catch(TroppiProdottiVendutiException e) {
             assert true;
         }
     }

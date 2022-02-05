@@ -45,7 +45,10 @@ public class Mercante extends Lavoratore{
         this.merciVendute = merciVendute;
     }
 
-
+    /**
+     * Metodo che ci restituisce il valore dell'attributo
+     * @return
+     */
     public int merciVendute() {
         return merciVendute;
     }
@@ -63,7 +66,6 @@ public class Mercante extends Lavoratore{
         else {
             throw new TroppiProdottiVendutiException ("Non hai abbastanza prodotti");
         }
-
     }
 }
 

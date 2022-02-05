@@ -3,9 +3,9 @@ package com.company.es4;
 public class TestLettoreMultimediale {
     public static void main(String[] args) {
 
-        /*LettoreMultimediale lettore = new LettoreMultimediale();
+        LettoreMultimediale lettore = new LettoreMultimediale();
 
-        //lo stato iniziale del lettore è stopped
+        /*//lo stato iniziale del lettore è stopped
         assert lettore.getStato() == LettoreMultimediale.Stato.STOPPED;
 
         lettore.play();
