@@ -28,7 +28,7 @@ public class TestLavoratori {
         Mercante mercante2 = (Mercante) mercante;
         assert mercante2.merciVendute() == 0;
 
-        /*mercante2.vendiFragole(3); // vendute 3 fragole
+        mercante2.vendiFragole(3); // vendute 3 fragole
         assert mercante2.merciVendute() == 3;
 
         mercante2.vendiAsparagi(9);
@@ -41,6 +41,6 @@ public class TestLavoratori {
             assert false;
         } catch(TroppiProdottiVendutiException e) {
             assert true;
-        }*/
+        }
     }
 }

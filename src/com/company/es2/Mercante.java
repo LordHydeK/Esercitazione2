@@ -4,7 +4,8 @@ public class Mercante extends Lavoratore{
     // Attributi della classe
     private String sedeDelMercato;
     private int numProdottiInVendita;
-    private int merciVendute;
+    private int merciVendute = 0;
+
 
     // Costruttori
     // 1. Richiama solo gli attributi della superclasse
@@ -49,5 +50,11 @@ public class Mercante extends Lavoratore{
         return merciVendute;
     }
 
+    public void vendiFragole(int fragole) {
+        merciVendute += fragole;
+    }
 
+    public void vendiAsparagi(int asparagi) {
+        merciVendute += asparagi;
+    }
 }
