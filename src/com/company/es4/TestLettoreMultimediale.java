@@ -3,7 +3,7 @@ package com.company.es4;
 public class TestLettoreMultimediale {
     public static void main(String[] args) {
 
-        LettoreMultimediale lettore = new LettoreMultimediale();
+        /*LettoreMultimediale lettore = new LettoreMultimediale();
 
         //lo stato iniziale del lettore è stopped
         assert lettore.getStato() == LettoreMultimediale.Stato.STOPPED;
@@ -32,7 +32,6 @@ public class TestLettoreMultimediale {
         Canzone canzone1= new Canzone("Sweet Child O'Mine", "Guns N'Roses");
         Canzone canzone2 = new Canzone("Like a stone", "Audioslave");
 
-        lettore.setCanzoni(new Canzone[]{canzone1, canzone2});
-
+        lettore.setCanzoni(new Canzone[]{canzone1, canzone2});*/
     }
 }
