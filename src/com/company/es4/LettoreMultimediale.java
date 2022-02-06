@@ -1,12 +1,14 @@
 package com.company.es4;
 
 public class LettoreMultimediale {
+
     // Attributi
     public enum Stato {STOPPED, PLAYING, PAUSED}
     private Stato statoLettore = Stato.STOPPED;
     public static final int MAX_VOLUME = 100;
     private int volume = MAX_VOLUME / 2;
     private int statoVolumePrecedente = 0;
+    public Canzone[] canzoni;
 
     // Costruttore
     public LettoreMultimediale() {
@@ -58,5 +60,15 @@ public class LettoreMultimediale {
             this.volume = this.statoVolumePrecedente;
             this.statoVolumePrecedente = 0;
         }
+    }
+
+    public void setCanzoni(Canzone[] canzoni) {
+        this.canzoni = new Canzone[canzoni.length];
+        for (int i=0; i<canzoni.length; i++) {
+            this.canzoni[i] = canzoni[i];
+        }
+    }
+    public Canzone[] getCanzoni() {
+        return canzoni;
     }
 }
