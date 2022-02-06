@@ -58,5 +58,5 @@ public class LettoreMultimediale {
             this.volume = this.statoVolumePrecedente;
             this.statoVolumePrecedente = 0;
         }
-    }//ciao
+    }
 }
