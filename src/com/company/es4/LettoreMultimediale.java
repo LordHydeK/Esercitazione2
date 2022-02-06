@@ -2,10 +2,10 @@ package com.company.es4;
 
 public class LettoreMultimediale {
     // Attributi
-    public enum Stato {STOPPED, PLAYING, PAUSED};
+    public enum Stato {STOPPED, PLAYING, PAUSED}
     private Stato statoLettore = Stato.STOPPED;
-    private int volume;
-    private static final byte MAX_VOLUME = 100;
+    public static final int MAX_VOLUME = 100;
+    private int volume = MAX_VOLUME / 2;
 
     // Costruttore
     public LettoreMultimediale() {
@@ -35,4 +35,5 @@ public class LettoreMultimediale {
     public void pause(){
         this.statoLettore=Stato.PAUSED;
     }
+
 }

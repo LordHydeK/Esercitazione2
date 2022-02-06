@@ -4,7 +4,6 @@ public class TestLettoreMultimediale {
     public static void main(String[] args) {
 
         LettoreMultimediale lettore = new LettoreMultimediale();
-        Stato stato;
 
 
         //lo stato iniziale del lettore è stopped
@@ -17,9 +16,9 @@ public class TestLettoreMultimediale {
         assert lettore.getStato() == LettoreMultimediale.Stato.PAUSED;
 
         //il volume iniziale è pari al max volume (100) / 2
-        /*int volumeIniziale = lettore.getVolume();
-        assert volumeIniziale== LettoreMultimediale.MAX_VOLUME / 2;
-*/
+        int volumeIniziale = lettore.getVolume();
+        assert volumeIniziale == LettoreMultimediale.MAX_VOLUME / 2;
+
         /*//alziamo il volume di uno
         lettore.volumeUp();
         assert lettore.getVolume()== volumeIniziale + 1;
