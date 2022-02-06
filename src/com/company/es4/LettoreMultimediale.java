@@ -2,7 +2,10 @@ package com.company.es4;
 
 public class LettoreMultimediale {
     // Attributi
-    private enum Stato {STOPPED, PLAYING, PAUSED};
+    /*private enum Stato {
+        STOPPED,
+        PLAYING,
+        PAUSED;};*/
     private int volume;
     private static final byte MAX_VOLUME = 100;
 

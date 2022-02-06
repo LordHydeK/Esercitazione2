@@ -4,6 +4,8 @@ public class TestLettoreMultimediale {
     public static void main(String[] args) {
 
         LettoreMultimediale lettore = new LettoreMultimediale();
+        Stato stato;
+
 
         /*//lo stato iniziale del lettore è stopped
         assert lettore.getStato() == LettoreMultimediale.Stato.STOPPED;
