@@ -1,7 +1,6 @@
 package com.company.es4;
 
 public class LettoreMultimediale {
-
     // Attributi
     public enum Stato {STOPPED, PLAYING, PAUSED}
     private Stato statoLettore = Stato.STOPPED;
@@ -67,8 +66,5 @@ public class LettoreMultimediale {
         for (int i=0; i<canzoni.length; i++) {
             this.canzoni[i] = canzoni[i];
         }
-    }
-    public Canzone[] getCanzoni() {
-        return canzoni;
     }
 }

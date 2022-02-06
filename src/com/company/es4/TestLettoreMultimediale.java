@@ -34,6 +34,5 @@ public class TestLettoreMultimediale {
         Canzone canzone2 = new Canzone("Like a stone", "Audioslave");
 
         lettore.setCanzoni(new Canzone[]{canzone1, canzone2});
-        System.out.println();
     }
 }
