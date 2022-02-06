@@ -29,27 +29,39 @@ public class LettoreMultimediale {
         this.statoLettore = statoLettore;
     }
 
-    // metodi
+    /**
+     * Metodo per cambiare lo stato del lettore a PLAYING
+     */
     public void play(){
         this.statoLettore=Stato.PLAYING;
     }
 
+    /**
+     * Metodo per cambiare lo stato del lettore a PAUSED
+     */
     public void pause(){
         this.statoLettore=Stato.PAUSED;
     }
-
+    /**
+     * Metodo per incrementare il volume di una unità
+     */
     public void volumeUp() {
         if (this.volume <= MAX_VOLUME-1) {
             this.volume++;
         }
     }
-
+    /**
+     * Metodo per incrementare il volume di un valore passato come parametro
+     * @param incremento valore
+     */
     public void volumeUp(int incremento) {
         if (this.volume <= MAX_VOLUME-incremento) {
             this.volume += incremento;
         }
     }
-
+    /**
+     * Metodo per impostare muto
+     */
     public void mute() {
         if (this.volume != 0) {
             this.statoVolumePrecedente = this.volume;
@@ -61,6 +73,10 @@ public class LettoreMultimediale {
         }
     }
 
+    /**
+     * Metodo per impostare una lista di canzoni passata come parametro
+     * @param canzoni array di Canzone
+     */
     public void setCanzoni(Canzone[] canzoni) {
         this.canzoni = new Canzone[canzoni.length];
         for (int i=0; i<canzoni.length; i++) {
