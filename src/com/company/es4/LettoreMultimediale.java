@@ -6,6 +6,7 @@ public class LettoreMultimediale {
     private Stato statoLettore = Stato.STOPPED;
     public static final int MAX_VOLUME = 100;
     private int volume = MAX_VOLUME / 2;
+    private int statoVolumePrecedente = volume;
 
     // Costruttore
     public LettoreMultimediale() {

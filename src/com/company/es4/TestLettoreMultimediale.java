@@ -27,10 +27,10 @@ public class TestLettoreMultimediale {
         lettore.volumeUp(2);
         assert lettore.getVolume() == volumeIniziale + 1 + 2;
 
-        /*lettore.mute();
+        lettore.mute();
         assert lettore.getVolume() == 0;
 
-        Canzone canzone1= new Canzone("Sweet Child O'Mine", "Guns N'Roses");
+        /*Canzone canzone1= new Canzone("Sweet Child O'Mine", "Guns N'Roses");
         Canzone canzone2 = new Canzone("Like a stone", "Audioslave");
 
         lettore.setCanzoni(new Canzone[]{canzone1, canzone2});*/
