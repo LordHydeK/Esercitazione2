@@ -19,15 +19,15 @@ public class TestLettoreMultimediale {
         int volumeIniziale = lettore.getVolume();
         assert volumeIniziale == LettoreMultimediale.MAX_VOLUME / 2;
 
-        /*//alziamo il volume di uno
+        //alziamo il volume di uno
         lettore.volumeUp();
-        assert lettore.getVolume()== volumeIniziale + 1;
+        assert lettore.getVolume() == volumeIniziale + 1;
 
         //alziamo il volume di 2
         lettore.volumeUp(2);
         assert lettore.getVolume() == volumeIniziale + 1 + 2;
 
-        lettore.mute();
+        /*lettore.mute();
         assert lettore.getVolume() == 0;
 
         Canzone canzone1= new Canzone("Sweet Child O'Mine", "Guns N'Roses");

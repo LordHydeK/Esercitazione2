@@ -36,4 +36,16 @@ public class LettoreMultimediale {
         this.statoLettore=Stato.PAUSED;
     }
 
+    public void volumeUp() {
+        if (this.volume <= MAX_VOLUME-1) {
+            this.volume++;
+        }
+    }
+
+    public void volumeUp(int incremento) {
+        if (this.volume <= MAX_VOLUME-incremento) {
+            this.volume += incremento;
+        }
+    }
+
 }
